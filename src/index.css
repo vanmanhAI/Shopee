@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #d1d5db;
+  -webkit-text-fill-color: #000;
+  box-shadow: inset 0 0 0 20px #fff;
+  -webkit-box-shadow: inset 0 0 0 20px #fff;
+  transition: background-color 5000s ease-in-out 0s;
+}
