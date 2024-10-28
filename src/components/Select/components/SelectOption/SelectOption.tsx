@@ -8,7 +8,7 @@ interface SelectOptionsProps {
   asChild?: boolean
   classNameActive: string
   classNameSelected: string
-  label: string
+  label?: string
 }
 
 const SelectOption = forwardRef<HTMLElement, React.HTMLProps<HTMLElement> & SelectOptionsProps>(function SelectOption(

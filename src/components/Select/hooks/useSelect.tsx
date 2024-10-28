@@ -1,6 +1,5 @@
 import {
   autoUpdate,
-  flip,
   offset,
   OffsetOptions,
   Placement,
