@@ -1,7 +1,4 @@
 import classNames from 'classnames'
-import { ProfileFormData } from '@/pages/User/pages/Profile/Profile'
-
-export type changePasswordFormData = Pick<ProfileFormData, 'password'>
 
 export default function ChangePassword() {
   return (

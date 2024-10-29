@@ -13,7 +13,13 @@ import { useForm } from 'react-hook-form'
 import { truncateEmail } from '@/utils/utils'
 import { User } from '@/types/user.type'
 
-export type ProfileFormData = Pick<User, 'name' | 'address' | 'email' | 'phone' | 'date_of_birth'>
+export interface ProfileFormData {
+  name: string
+  address: string
+  email: string
+  phone: string
+  date_of_birth: string
+}
 
 export const Profile = () => {
   const navigate = useNavigate()
