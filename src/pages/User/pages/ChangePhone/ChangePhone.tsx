@@ -6,10 +6,9 @@ import { FieldPath, FieldValues, RegisterOptions, useForm, UseFormRegister } fro
 import classNames from 'classnames'
 import { formatEnforceToVnPhoneNumber } from '@/utils/utils'
 import { debounce } from 'lodash'
+import { ProfileFormData } from '@/pages/User/pages/Profile/Profile'
 
-export interface ChangePhoneFormData {
-  phone: string
-}
+export type ChangePhoneFormData = Pick<ProfileFormData, 'phone'>
 
 export default function ChangePhone() {
   const {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { createContext } from 'react'
 
 interface IDateSelectContext {
@@ -25,6 +25,12 @@ const DateSelect = ({ children }: { children: React.ReactNode }) => {
   const [day, setDay] = useState<string>(initialDateSelectContext.day)
   const [month, setMonth] = useState<string>(initialDateSelectContext.month)
   const [year, setYear] = useState<string>(initialDateSelectContext.year)
+
+  useEffect(() => {
+    console.log('day', day)
+    console.log('month', month)
+    console.log('year', year)
+  }, [day, month, year])
 
   return (
     <DateSelectContext.Provider value={{ day, setDay, month, setMonth, year, setYear }}>

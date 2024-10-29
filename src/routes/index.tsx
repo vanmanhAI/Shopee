@@ -9,7 +9,7 @@ import RegisterLayout from '@/layouts/RegisterLayout'
 import Login from '@/pages/Login'
 const ProductList = lazy(() => import('@/pages/ProductList/ProductList'))
 const ProductDetail = lazy(() => import('@/pages/ProductDetail/ProductDetail'))
-import Profile from '@/pages/User/pages/Profile'
+const Profile = lazy(() => import('@/pages/User/pages/Profile'))
 import Register from '@/pages/Register'
 import Spinner from '@/components/Spinner'
 import FallBack from '@/pages/ProductDetail/components/FallBack'
@@ -59,7 +59,9 @@ export const router = createBrowserRouter([
             element: (
               <MainLayout>
                 <UserLayout>
-                  <Profile />
+                  <Suspense>
+                    <Profile />
+                  </Suspense>
                 </UserLayout>
               </MainLayout>
             )

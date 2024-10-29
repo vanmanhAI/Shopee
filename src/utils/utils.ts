@@ -49,3 +49,9 @@ export const formatEnforceToVnPhoneNumber = (phoneNumber: string) => {
   }
   return phoneNumberVn
 }
+
+export const truncateEmail = (email: string) => {
+  const [name, domain] = email.split('@')
+  const nameTruncate = name.slice(0, 2) + '*'.repeat(name.length - 2)
+  return `${nameTruncate}@${domain}`
+}

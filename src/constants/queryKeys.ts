@@ -6,5 +6,8 @@ export enum QUERY_KEYS {
   GET_CATEGORIES = 'getCategories',
 
   // SEARCH KEY
-  SEARCH_PRODUCTS = 'getSearchProducts'
+  SEARCH_PRODUCTS = 'getSearchProducts',
+
+  // USER KEY
+  GET_PROFILE = 'getProfile'
 }
